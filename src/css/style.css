@@ -1,0 +1,141 @@
+body {
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+}
+
+body .dark-mode {
+    background-color: #212121;
+    color: #fffffff5;
+}
+
+header {
+    background-color: #5f5e5e;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.56rem;
+    box-shadow: 0px 5px 5px #ffffff;
+}
+
+header .logo,
+header .image-button {
+    width: 30px;
+}
+
+header #theme-change {
+    border: none;
+    background: none;
+}
+
+header .logo:hover,
+header .image-button:hover, main .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    background-color: #faebd7;
+    padding: 1.56rem;
+}
+
+main .poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.87rem;
+    justify-content: center;
+}
+
+main .card {
+    background-color: #75dfdf;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.99rem;
+    transition: 0.2s ease-in-out;
+}
+
+.dark-mode main{
+    background-color: #272727;
+    color: #ffffffff;
+}
+
+main .card:hover{
+    caret-color: #83ffff;
+}
+
+.dark-mode .card{
+    background-color: #a8a8a8a8;
+}
+
+main .card .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black ;
+    border-radius: 0.62rem;
+}
+
+main .card .info span{
+    font-size: 1.01rem;
+    padding: 0.31rem;
+    text-transform: uppercase;
+    border-radius: 0.62rem;
+}
+
+main .card .poke-img{
+    width: 5.62rem;
+    height: 5.62rem;
+}
+
+main .card .tipos{
+    display: flex;
+    gap: 1rem;
+}
+
+main .card .tipo{
+    border-radius: 0.62rem;
+    padding: 0.5rem;
+}
+
+.grama{
+    background-color: green;
+}
+
+.veneno{
+    background-color: rgb(236, 86, 236);
+}
+
+.fogo{
+    background-color: rgb(250, 97, 41);
+}
+
+.voador{
+    background-color: beige;
+}
+
+.dark-mode .voador{
+    background-color: #161616ad;
+}
+
+.inseto{
+    background-color: greenyellow;
+}
+
+.dark-mode .inseto{
+    background-color: rgb(119, 158, 61);
+}
+
+.agua{
+    background-color: rgb(93, 93, 255);
+}
+
+main .description{
+    max-height: 5rem ;
+    font-size: 0.87rem;
+    overflow-y: scroll;
+    text-align: justify;
+    padding-right: 0.62rem;
+
+}
